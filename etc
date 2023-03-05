@@ -1,0 +1,33 @@
+[
+  { name: 'John', age: 50 },
+  { name: 'Jane', age: 22 },
+  { name: 'Paul', age: 34 },
+  { name: 'Kate', age: 15 },
+  { name: 'Amanda', age: 65 },
+  { name: 'Steve', age: 38 },
+  { name: 'Keith', age: 21 },
+  { name: 'Don', age: 50 },
+  { name: 'Susan', age: 21 }
+]
+
+<div id="testtabl" class="col-md-12">
+    <input v-model="search" class="form-control" placeholder="Filter users by name or age">
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr v-for="user in users | filterBy search">
+                <td> @{{ user.name }} </td>
+                <td> @{{ name }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

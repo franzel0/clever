@@ -1,0 +1,58 @@
+.rowtop {
+    top:60px;
+    position: absolute;
+    padding-left: 20px;
+    padding-right   : 20px;
+}
+.navbar, .dropdown-menu{
+    background-color:#b5152b !important;
+}
+
+.navbar a{
+    color:white !important;
+}
+
+.open a, .dropdown-menu a:hover {
+    color: #555 !important;
+}
+
+.open li a {
+    color: white !important;
+}
+
+.active a, .active .unpublished{
+    color:#555 !important;
+}
+
+.unpublished {
+    color:#ffcc00;
+}
+
+.tagList {
+    box-sizing: border-box;
+    display: block;
+    min-height: 32px;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.tags_rendered {
+    /* float: left; */
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #e4e4e4;
+}
+
+.tinyTable {
+    border: 1px solid grey;
+}
+hr {
+    margin-top:10px;
+    margin-bottom:10px;
+    border-color:#c2c2a3
+}
